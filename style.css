@@ -29,6 +29,10 @@ ul {
 footer {
   width: 100%;
 }
+.span {
+  margin-top: 8px;
+  font-weight: bold;
+}
 
 .logo {
   width: 150px;
@@ -66,6 +70,10 @@ footer {
   /* padding: 0px 30px 10px 30px; */
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
   background: #fff;
   color: #333;
@@ -89,6 +97,8 @@ header {
 .nav-links {
   display: flex;
   gap: 20px;
+  padding: 20px;
+  /* border: 2px solid red; */
 }
 
 .nav-links a {
@@ -99,6 +109,7 @@ header {
 .hamburger {
   display: none;
   flex-direction: column;
+
   cursor: pointer;
 }
 
@@ -151,6 +162,9 @@ header {
   width: 15%;
   height: 40px;
   border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 30px;
   font-weight: 700;
   border: 2px solid var(--gold);
@@ -212,11 +226,20 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 350px;
+  /* border: 2px solid red; */
+}
+
+.card img {
+  height: 95%;
+  width: 100%;
 }
 
 .card span {
   display: flex;
   justify-content: center;
+  align-items: center;
+  height: 5%;
 }
 
 .contact {
@@ -227,6 +250,33 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.con {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  gap: 16px;
+  /* border: 2px solid red; */
+}
+
+.location_1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* border: 2px solid red; */
+  /* align-items: center; */
+  gap: 16px;
+  /* border: 2px solid red; */
+}
+
+.tel,
+.email {
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+  /* border: 3px solid red; */
 }
 @media (max-width: 39.9375em) {
   .contact {
@@ -239,10 +289,12 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 20px;
 }
 
 .portfolio-brief-text {
   margin-top: 2em;
+  padding: 10px 16px;
 }
 .contact .form {
   width: 600px;
@@ -353,7 +405,7 @@ footer {
   .logo {
     width: 100px;
     height: 50px;
-    padding: 10px;
+    padding: 20px;
     border-radius: 4px;
     /* border: 2px solid red; */
   }
@@ -392,6 +444,17 @@ footer {
   }
 
   .locations {
+    width: 90%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* border: 3px solid red; */
+  }
+
+  .location_1,
+  .con {
     width: 100%;
   }
 
